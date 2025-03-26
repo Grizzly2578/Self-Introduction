@@ -1,2 +1,2 @@
-# Resume
- A Resume intended for Immersion
+# Self Intro
+A self introduction for Personal development
