@@ -1,0 +1,137 @@
+/* Define color variables */
+:root {
+    --primary-color: #d43369; /* Blue */
+    --secondary-color: #333; /* Dark gray */
+    --text-color: #555; /* Medium gray */
+    --background-color: #f9f9f9; /* Light gray */
+    --card-background-color: #fff; /* White */
+    --border-color: #ddd; /* Light gray for borders */
+    --hover-shadow-color: rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+#personal-info {
+    padding: 40px 20px;
+    /* background: url('../images/personal-info-bg.jpg') no-repeat center center/cover; */
+    background-color: var(--background-color);
+    text-align: center;
+    position: relative; /* Required for the overlay */
+    overflow: hidden; /* Ensure the overlay doesn't overflow */
+}
+
+#personal-info .title {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#personal-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* White translucent overlay */
+    z-index: 1; /* Place the overlay below the content */
+}
+
+.personal-info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#personal-info .title,
+.personal-info-container {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
+.personal-info-item {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--hover-shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    position: relative;
+}
+
+.personal-info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px var(--hover-shadow-color);
+}
+
+.personal-info-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.personal-info-item h3 i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.personal-info-item p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 5px 0;
+}
+
+.personal-info-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.personal-info-item a:hover {
+    text-decoration: underline;
+}
+
+.family-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.family-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.family-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.family-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.family-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}

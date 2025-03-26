@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Self Introduction</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="styles/personal-info.css" />
+		<link rel="stylesheet" href="styles/mediaqueries.css" />
+		<link rel="stylesheet" href="styles/animations.css" />
+		<link rel="stylesheet" href="styles/keyframes.css" />
+		<link rel="stylesheet" href="styles/education.css" />
+		<link rel="stylesheet" href="styles/projects.css" />
+		<link rel="stylesheet" href="styles/hobbies.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body>
+		<nav id="desktop-nav">
+			<div class="logo tracking-in-expand">Noah Sitoy</div>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#family-info">Family</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#projects" >Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<nav id="hamburger-nav">
+			<div class="logo tracking-in-expand">Noah Sitoy</div>
+			<div id="hamburger-menu">
+				<div id="hamburger-icon" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul class="menu-links">
+					<li><a href="#about" onclick="toggleMenu()">About</a></li>
+					<li><a href="#family-info" onclick="toggleMenu()">Family</a></li>
+					<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+					<li><a href="#education" onclick="toggleMenu()">Education</a></li>
+					<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section id="about" class="home">
+			<div class="home-img">
+				<img src="images/noah.jpg" alt="Noah" />
+			</div>
+			<div class="home-content">
+				<h1>Hi, It's <span>Noah</span></h1>
+				<h3 class="typing-text">I'm a <span></span></h3>
+				<p>
+					I develop a variety of tools and utilities for fun! I enjoy creating
+					economy based systems (Game Development). Programming is my hobby and
+					mostly enjoy working with a team. Experienced full stack developer and hands on computer & server hardware management.
+                    As a STEM student studying at Lipa
+					Adventist Academy, I strive to be prepared for service to God and
+					Humanity!
+				</p>
+				<div class="social-icons">
+					<a onclick="window.open('https\:\/\/www.facebook.com/noahvsitoy1/')"
+						><i class="fa-brands fa-facebook-f"></i
+					></a>
+					<a
+						onclick="window.open('https\:\/\/discord.com/users/908234266301829132')"
+						><i class="fa-brands fa-discord"></i
+					></a>
+					<a onclick="window.open('https\:\/\/github.com/Grizzly2578/')"
+						><i class="fa-brands fa-github"></i
+					></a>
+					<a onclick="window.open('mailto:noah.sitoy001@gmail.com')"
+						><i class="fa-solid fa-envelope"></i
+					></a>
+					<a class="tooltip" onclick="copyNumberToClipboard()">
+						<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+						<i class="fa-solid fa-phone"></i
+					></a>
+				</div>
+				<a class="btn" onclick="window.open('Resume.pdf')">Download CV</a>
+				<a class="btn btn-2" onclick="location.href='./#contact'"
+					>Contact Info</a
+				>
+			</div>
+			<img
+				src="./assets/arrow.png"
+				alt="Arrow icon"
+				class="icon arrow"
+				onclick="location.href='./#experience'"
+			/>
+		</section>
+		<section id="personal-info">
+			<p class="section__text__p1">Know More About Me</p>
+			<h1 class="title">Personal Information</h1>
+			<div class="personal-info-container">
+				<div class="personal-info-item">
+					<h3><i class="fa-solid fa-user"></i> Full Name:</h3>
+					<p>Norberto Noah Valencia Sitoy</p>
+				</div>
+				<div class="personal-info-item">
+					<h3><i class="fa-solid fa-location-dot"></i> Address:</h3>
+					<p>Home City: Santa Maria, Laguna</p>
+					<p>Mailing Address: # Bonifactio Street, Santa Maria, Laguna, Philippines</p>
+				</div>
+				<div class="personal-info-item">
+					<h3><i class="fa-solid fa-phone"></i> Contact Information:</h3>
+					<p>Phone Number: +63 9604266837</p>
+					<p>Email Address: <a href="mailto:noah.sitoy001@gmail.com">noah.sitoy001@gmail.com</a></p>
+				</div>
+				<div class="personal-info-item">
+					<h3><i class="fa-solid fa-calendar"></i> Date of Birth:</h3>
+					<p>February 18, 2007</p>
+				</div>
+				<div class="personal-info-item">
+					<h3><i class="fa-solid fa-heart"></i> Medical Information:</h3>
+					<p>Blood Type: O+</p>
+					<p>Allergies: None</p>
+					<p>Lactose Intolerant</p>
+				</div>
+			</div>
+		</section>
+		<section id="family-info">
+			<p class="section__text__p1">Meet My</p>
+			<h1 class="title">Family</h1>
+			<div class="family-grid-container">
+				<div class="family-card">
+					<img src="images/mother.jpg" alt="Mother" />
+					<p>Mother: Susan Valencia Sitoy</p>
+				</div>
+				<div class="family-card">
+					<img src="images/father.jpg" alt="Father" />
+					<p>Father: Nor Sacro Sitoy</p>
+				</div>
+				<div class="family-card">
+					<img src="images/younger-brother.jpg" alt="Younger Brother" />
+					<p>Younger Brother: Ron Joseph Valencia Sitoy</p>
+				</div>
+			</div>
+		</section>
+		<section id="experience">
+			<p class="section__text__p1">Explore My</p>
+			<h1 class="title">Experience</h1>
+			<div class="experience-details-container">
+				<div class="about-containers">
+					<div class="details-container">
+						<h2 class="experience-sub-title">Backend Development</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="assets/checkmark.png"
+									alt="Experience Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Python</h3>
+									<p>Advanced</p>
+									<p>4 Years</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="assets/checkmark.png"
+									alt="Experience Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Java</h3>
+									<p>2 Years</p>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="assets/checkmark.png"
+									alt="Experience Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Node JS</h3>
+									<p>Intermediate</p>
+									<p>1 Year</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="assets/checkmark.png"
+									alt="Experience Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>C#</h3>
+									<p>Intermediate</p>
+									<p>1 Month</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="assets/checkmark.png"
+									alt="Experience Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>C++</h3>
+									<p>Novice</p>
+									<p>~6 Months</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="assets/checkmark.png"
+									alt="Experience Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Typescript</h3>
+									<p>Basic</p>
+									<p>1 Year</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="details-container">
+						<h2 class="experience-sub-title">Frontend Development</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="assets/checkmark.png"
+									alt="Experience Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>HTML</h3>
+									<p>Advanced</p>
+									<p>2 Years</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="assets/checkmark.png"
+									alt="Experience Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>CSS</h3>
+									<p>Advanced</p>
+									<p>2 Years</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="assets/checkmark.png"
+									alt="Experience Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Javascript</h3>
+									<p>Intermediate</p>
+									<p>3 Years</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="assets/checkmark.png"
+									alt="Experience Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Git</h3>
+									<p>Basic</p>
+									<p>4 Years</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img
+				src="./assets/arrow.png"
+				alt="Arrow icon"
+				class="icon arrow"
+				onclick="location.href='./#education'"
+			/>
+		</section>
+		<section id="education">
+			<p class="section__text__p1">Get To Know More</p>
+			<h1 class="title">Education</h1>
+			<div class="section-container">
+				<div class="education-details-container">
+					<div class="education-elementary-school">
+						<img
+							fetchpriority="high"
+							decoding="async"
+							width="756"
+							height="460"
+							src="images/smes_resized.jpg"
+							class="smes-image"
+                            sizes="(max-width: 756px) 100vw, 756px"
+						/>
+						<div class="laa-details">
+							<div class="laa-heading">
+								<h3 class="education-laa-title">Elementary School</h3>
+								<h3 class="education-laa-title">
+									Grade 1 - Grade 6 (SY 2013 - 2019)
+								</h3>
+							</div>
+							<div class="education-laa-content">
+								<p>
+									Santa Maria Elementary School is public government school
+									managed by DepEd located at 112 Burgos Santa Maria Laguna,
+									Philippines. The school is a public elementary school that
+									offers primary education to the children of Santa Maria and
+									those nearby.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="education-high-school">
+						<img
+							fetchpriority="high"
+							decoding="async"
+							width="756"
+							height="460"
+							src="https://laa.edu.ph/wp-content/uploads/2024/08/148512413_3709096645792990_3030020335828315707_n.jpg"
+							class="laa-image"
+							alt=""
+							srcset="
+								https://laa.edu.ph/wp-content/uploads/2024/08/148512413_3709096645792990_3030020335828315707_n.jpg         756w,
+								https://laa.edu.ph/wp-content/uploads/2024/08/148512413_3709096645792990_3030020335828315707_n-300x183.jpg 300w
+							"
+							sizes="(max-width: 756px) 100vw, 756px"
+						/>
+						<div class="laa-details">
+							<div class="laa-heading">
+								<h3 class="education-laa-title">
+									Junior High School - Senior High School
+								</h3>
+								<h3 class="education-laa-title">
+									Grade 7 - Grade 12 (SY 2019 - 2025)
+								</h3>
+							</div>
+							<div class="education-laa-content">
+								<p>
+									Lipa Adventist Academy is a Bible-based institution which
+									integrates faith and learning in the curriculum. It provides
+									an environment conducive for the development of physical,
+									mental, social and spiritual capabilities of the student. It
+									is the school that can make a difference in the life of your
+									children.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="projects">
+				<p class="section__text__p1">These Are My</p>
+				<h1 class="title">Projects</h1>
+				<div class="hobbies-grid-container">
+					<div class="hobby-card">
+						<img src="images/HeroesBibleTriviaBot1.png" alt="HeroesBibleTriviaBot" />
+						<p>Heroes Bible Trivia Bot</p>
+						<small>A Discord Bot created way back from 2022 and operational until
+							2024. The bot provided bible trivia questions insipired from
+							Heroes II!</small>
+					</div>
+					<div class="hobby-card">
+						<img src="images/buzzer.jpg" alt="Reading" />
+						<p>Automatic Buzzer</p>
+						<small>
+							An automatic buzzer system using an esp32 microcontroller to automate 
+							the buzzer of the dormitory paired with a RTC module and a 250V Relay.
+						</small>
+					</div>
+					<div class="hobby-card">
+						<iframe src="https://grizzly2578.github.io/FlappyBird/" frameborder="0"></iframe>
+						<p>Floppy Bird</p>
+					</div>
+					<div class="hobby-card">
+						<img src="images/buzzer.jpg" alt="Reading" />
+						<p>Automatic Buzzer</p>
+					</div>
+				</div>
+		</section>
+		<section id="hobbies">
+				<p class="section__text__p1">These Are My</p>
+				<h1 class="title">Hobbies</h1>
+				<div class="hobbies-grid-container">
+					<div class="hobby-card">
+						<img src="images/programming.jpg" alt="Programming" />
+						<p>Programming</p>
+					</div>
+					<div class="hobby-card">
+						<img src="images/reading.jpg" alt="Reading" />
+						<p>Reading</p>
+					</div>
+					<div class="hobby-card">
+						<img src="images/photography.jpg" alt="Photography" />
+						<p>Photography</p>
+					</div>
+					<div class="hobby-card">
+						<img src="images/work-out.jpg" alt="Photography" />
+						<p>Working Out</p>
+					</div>
+					<div class="hobby-card">
+						<img src="images/gaming.jpg" alt="Gaming" />
+						<p>Gaming</p>
+					</div>
+				</div>
+		</section>
+		<section id="contact">
+			<p class="section__text__p1">Get in Touch</p>
+			<h1 class="title">Contact Me</h1>
+			<div class="contact-info-upper-container">
+				<div class="contact-info-container">
+					<div class="social-icons contact">
+						<a
+							id="contact-email"
+							onclick="window.open('mailto:noah.sitoy001@gmail.com')"
+							><i class="fa-solid fa-envelope"></i
+						></a>
+					</div>
+					<p>
+						<a href="mailto:noah.sitoy001@gmail.com">noah.sitoy001@gmail.com</a>
+					</p>
+				</div>
+				<div class="contact-info-container">
+					<div class="social-icons contact">
+						<p>
+							<a
+								id="contact-facebook"
+								onclick="window.open('https\:\/\/www.facebook.com/noahvsitoy1/')"
+								><i class="fa-brands fa-facebook-f"></i
+							></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<nav>
+				<div class="nav-links-container">
+					<ul class="nav-links">
+						<li><a href="#about">About</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<p>Copyright © 2025 Grizzly2578. All Rights Reserved.</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>

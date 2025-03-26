@@ -1,0 +1,53 @@
+.education-details-container {
+    display: block;
+    column-gap: 2rem;
+    max-width: 100%;
+    padding: 0 1rem!important;
+}
+
+.education-elementary-school,
+.education-high-school {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; /* Add gap between image and details */
+    margin-bottom: 2rem;
+}
+
+.laa-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* 
+.laa-details {
+    max-width: 100%;
+    padding: 0 1rem!important;
+} */
+.education-laa-content {
+    padding: 0 1rem!important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    overflow-wrap: break-word; /* Ensure long words break to the next line */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    hyphens: auto; /* Add hyphens where appropriate */
+}
+.education-laa-content p {
+    text-indent: 50px;
+
+}
+
+.education-elementary-school {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+.education-high-school {
+    display: flex;
+    align-items: flex-start;
+}
+.laa-image,.smes-image{
+    width: 40vw;
+    height: 35vh;
+    border-radius: 50px 10px 50px 10px;
+    margin-right: 20px;
+}
