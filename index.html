@@ -8,6 +8,12 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 		<link rel="stylesheet" href="styles/personal-info.css" />
 		<link rel="stylesheet" href="styles/mediaqueries.css" />
 		<link rel="stylesheet" href="styles/animations.css" />
@@ -15,6 +21,7 @@
 		<link rel="stylesheet" href="styles/education.css" />
 		<link rel="stylesheet" href="styles/projects.css" />
 		<link rel="stylesheet" href="styles/hobbies.css" />
+		<link rel="stylesheet" href="styles/gallery.css" />
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>
@@ -25,7 +32,9 @@
 				<li><a href="#family-info">Family</a></li>
 				<li><a href="#experience">Experience</a></li>
 				<li><a href="#education">Education</a></li>
-				<li><a href="#projects" >Projects</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#hobbies">Hobbies</a></li>
+				<li><a href="#gallery">Gallery</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
@@ -43,6 +52,8 @@
 					<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
 					<li><a href="#education" onclick="toggleMenu()">Education</a></li>
 					<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+					<li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+					<li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
 					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 				</ul>
 			</div>
@@ -58,10 +69,10 @@
 				<p>
 					I develop a variety of tools and utilities for fun! I enjoy creating
 					economy based systems (Game Development). Programming is my hobby and
-					mostly enjoy working with a team. Experienced full stack developer and hands on computer & server hardware management.
-                    As a STEM student studying at Lipa
-					Adventist Academy, I strive to be prepared for service to God and
-					Humanity!
+					mostly enjoy working with a team. Experienced full stack developer and
+					hands on computer & server hardware management. As a STEM student
+					studying at Lipa Adventist Academy, I strive to be prepared for
+					service to God and Humanity!
 				</p>
 				<div class="social-icons">
 					<a onclick="window.open('https\:\/\/www.facebook.com/noahvsitoy1/')"
@@ -105,12 +116,18 @@
 				<div class="personal-info-item">
 					<h3><i class="fa-solid fa-location-dot"></i> Address:</h3>
 					<p>Home City: Santa Maria, Laguna</p>
-					<p>Mailing Address: # Bonifactio Street, Santa Maria, Laguna, Philippines</p>
+					<p>
+						Mailing Address: # Bonifactio Street, Santa Maria, Laguna,
+						Philippines
+					</p>
 				</div>
 				<div class="personal-info-item">
 					<h3><i class="fa-solid fa-phone"></i> Contact Information:</h3>
 					<p>Phone Number: +63 9604266837</p>
-					<p>Email Address: <a href="mailto:noah.sitoy001@gmail.com">noah.sitoy001@gmail.com</a></p>
+					<p>
+						Email Address:
+						<a href="mailto:noah.sitoy001@gmail.com">noah.sitoy001@gmail.com</a>
+					</p>
 				</div>
 				<div class="personal-info-item">
 					<h3><i class="fa-solid fa-calendar"></i> Date of Birth:</h3>
@@ -299,7 +316,7 @@
 							height="460"
 							src="images/smes_resized.jpg"
 							class="smes-image"
-                            sizes="(max-width: 756px) 100vw, 756px"
+							sizes="(max-width: 756px) 100vw, 756px"
 						/>
 						<div class="laa-details">
 							<div class="laa-heading">
@@ -359,59 +376,160 @@
 			</div>
 		</section>
 		<section id="projects">
-				<p class="section__text__p1">These Are My</p>
-				<h1 class="title">Projects</h1>
-				<div class="hobbies-grid-container">
-					<div class="hobby-card">
-						<img src="images/HeroesBibleTriviaBot1.png" alt="HeroesBibleTriviaBot" />
-						<p>Heroes Bible Trivia Bot</p>
-						<small>A Discord Bot created way back from 2022 and operational until
-							2024. The bot provided bible trivia questions insipired from
-							Heroes II!</small>
-					</div>
-					<div class="hobby-card">
-						<img src="images/buzzer.jpg" alt="Reading" />
-						<p>Automatic Buzzer</p>
-						<small>
-							An automatic buzzer system using an esp32 microcontroller to automate 
-							the buzzer of the dormitory paired with a RTC module and a 250V Relay.
-						</small>
-					</div>
-					<div class="hobby-card">
-						<iframe src="https://grizzly2578.github.io/FlappyBird/" frameborder="0"></iframe>
-						<p>Floppy Bird</p>
-					</div>
-					<!-- <div class="hobby-card">
-						<img src="images/buzzer.jpg" alt="Reading" />
-						<p>Automatic Buzzer</p>
-					</div> -->
+			<p class="section__text__p1">These Are My</p>
+			<h1 class="title">Projects</h1>
+			<div class="projects-grid-container">
+				<div class="projects-card">
+					<img
+						src="images/HeroesBibleTriviaBot1.png"
+						alt="HeroesBibleTriviaBot"
+					/>
+					<p>Heroes Bible Trivia Bot</p>
+					<small
+						>A Discord Bot created way back from 2022 and operational until
+						2024. The bot provided bible trivia questions insipired from Heroes
+						II!</small
+					>
 				</div>
+				<div class="projects-card">
+					<img src="images/buzzer.jpg" alt="Reading" />
+					<p>Automatic Buzzer</p>
+					<small>
+						An automatic buzzer system using an esp32 microcontroller to
+						automate the buzzer of the dormitory paired with a RTC module and a
+						250V Relay.
+					</small>
+				</div>
+				<div class="projects-card">
+					<iframe
+						src="https://grizzly2578.github.io/FlappyBird/"
+						frameborder="0"
+					></iframe>
+					<p>Floppy Bird</p>
+				</div>
+			</div>
 		</section>
 		<section id="hobbies">
-				<p class="section__text__p1">These Are My</p>
-				<h1 class="title">Hobbies</h1>
-				<div class="hobbies-grid-container">
-					<div class="hobby-card">
-						<img src="images/programming.jpg" alt="Programming" />
-						<p>Programming</p>
+			<p class="section__text__p1">These Are My</p>
+			<h1 class="title">Hobbies</h1>
+			<div class="hobbies-grid-container">
+				<div class="hobby-card">
+					<img src="images/programming.jpg" alt="Programming" />
+					<p>Programming</p>
+				</div>
+				<div class="hobby-card">
+					<img src="images/reading.jpg" alt="Reading" />
+					<p>Reading</p>
+				</div>
+				<div class="hobby-card">
+					<img src="images/photography.jpg" alt="Photography" />
+					<p>Photography</p>
+				</div>
+				<div class="hobby-card">
+					<img src="images/work-out.jpg" alt="Photography" />
+					<p>Working Out</p>
+				</div>
+				<div class="hobby-card">
+					<img src="images/duolingo.png" alt="Photography" />
+					<p>Language Leardning - Duolingo</p>
+				</div>
+				<div class="hobby-card">
+					<img src="images/gaming.jpg" alt="Gaming" />
+					<p>Gaming</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="gallery">
+			<p class="section__text__p1">Check Out My</p>
+			<h1 class="title">Gallery</h1>
+			<div class="gallery-container">
+				<div class="swiper gallery-slider">
+					<div class="swiper-wrapper">
+						<!-- Slide-start -->
+						<div class="swiper-slide gallery-slide">
+							<div class="gallery-slide-img">
+								<img src="images/Gallery/1.jpg" alt="gallery" />
+							</div>
+							<div class="gallery-slide-content">
+								<div class="gallery-slide-content-bottom">
+									<h2 class="image-name">Cosmos Caudatus</h2>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-slide">
+							<div class="gallery-slide-img">
+								<img src="images/Gallery/2.jpg" alt="gallery" />
+							</div>
+							<div class="gallery-slide-content">
+								<div class="gallery-slide-content-bottom">
+									<h2 class="image-name">West Indian Lantana</h2>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-slide">
+							<div class="gallery-slide-img">
+								<img src="images/Gallery/3.jpg" alt="gallery" />
+							</div>
+							<div class="gallery-slide-content">
+								<div class="gallery-slide-content-bottom">
+									<h2 class="image-name">Sunflower</h2>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-slide">
+							<div class="gallery-slide-img">
+								<img src="images/Gallery/4.jpg" alt="gallery" />
+							</div>
+							<div class="gallery-slide-content">
+								<div class="gallery-slide-content-bottom">
+									<h2 class="image-name">West Indian Lantana</h2>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-slide">
+							<div class="gallery-slide-img">
+								<img src="images/Gallery/5.jpg" alt="gallery" />
+							</div>
+							<div class="gallery-slide-content">
+								<div class="gallery-slide-content-bottom">
+									<h2 class="image-name">West Indian Lantana</h2>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-slide">
+							<div class="gallery-slide-img">
+								<img src="images/Gallery/6.jpg" alt="gallery" />
+							</div>
+							<div class="gallery-slide-content">
+								<div class="gallery-slide-content-bottom">
+									<h2 class="image-name">Sky</h2>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-slide">
+							<div class="gallery-slide-img">
+								<img src="images/Gallery/7.jpg" alt="gallery" />
+							</div>
+							<div class="gallery-slide-content">
+								<div class="gallery-slide-content-bottom">
+									<h2 class="image-name">West Indian Lantana</h2>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="hobby-card">
-						<img src="images/reading.jpg" alt="Reading" />
-						<p>Reading</p>
-					</div>
-					<div class="hobby-card">
-						<img src="images/photography.jpg" alt="Photography" />
-						<p>Photography</p>
-					</div>
-					<div class="hobby-card">
-						<img src="images/work-out.jpg" alt="Photography" />
-						<p>Working Out</p>
-					</div>
-					<div class="hobby-card">
-						<img src="images/gaming.jpg" alt="Gaming" />
-						<p>Gaming</p>
+
+					<div class="gallery-slider-control">
+						<div class="swiper-button-prev slider-arrow">
+							<ion-icon name="arrow-back-outline"></ion-icon>
+						</div>
+						<div class="swiper-button-next slider-arrow">
+							<ion-icon name="arrow-forward-outline"></ion-icon>
+						</div>
+						<div class="swiper-pagination"></div>
 					</div>
 				</div>
+			</div>
 		</section>
 		<section id="contact">
 			<p class="section__text__p1">Get in Touch</p>
@@ -447,6 +565,7 @@
 				<div class="nav-links-container">
 					<ul class="nav-links">
 						<li><a href="#about">About</a></li>
+						<li><a href="#family-info">Family</a></li>
 						<li><a href="#experience">Experience</a></li>
 						<li><a href="#education">Education</a></li>
 						<li><a href="#projects">Projects</a></li>
@@ -456,6 +575,15 @@
 			</nav>
 			<p>Copyright © 2025 Grizzly2578. All Rights Reserved.</p>
 		</footer>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>
