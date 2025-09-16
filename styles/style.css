@@ -270,10 +270,6 @@ span {
 	color: black;
 	box-shadow: 0 0 25px #d43369;
 }
-.btn-2 {
-	margin-left: 10px;
-}
-
 /* Phone Number Tooltip */
 
 .tooltip {
@@ -473,6 +469,10 @@ a {
 #contact-facebook {
 	margin: 0;
 	margin-left: 1rem;
+}
+
+.btn_storage {
+
 }
 
 @keyframes cursor {
